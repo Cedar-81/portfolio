@@ -22,14 +22,22 @@ function Homepage() {
           </div>
           <div className={classes.bannersocialscon}>
             <div className={classes.bannersocials}>
-              <a target={"_blank"} href="https://twitter.com/C_edar_">
+              <a
+                target={"_blank"}
+                rel="noreferrer"
+                href="https://twitter.com/C_edar_"
+              >
                 <img
                   src={twitter.src}
                   alt="twitter icon"
                   className={classes.icon}
                 />
               </a>
-              <a target={"_blank"} href="https://github.com/Cedar-81/">
+              <a
+                target={"_blank"}
+                rel="noreferrer"
+                href="https://github.com/Cedar-81/"
+              >
                 <img
                   src={github.src}
                   alt="github icon"
@@ -38,7 +46,8 @@ function Homepage() {
               </a>
               <a
                 target={"_blank"}
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=cedarwudnovels@gmail.com"
+                rel="noreferrer"
+                href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=cedarwudnovels@gmail.com"
               >
                 <img
                   src={email.src}
@@ -51,7 +60,7 @@ function Homepage() {
         </div>
       </div>
       <div className={classes.bannerimg}>
-        <img src={bannerimg.src} alt="an image of me" />{" "}
+        <img src={bannerimg.src} alt="an image of me" />
       </div>
     </div>
   );
