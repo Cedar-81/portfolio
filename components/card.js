@@ -2,7 +2,7 @@ import classes from "./card.module.css";
 
 function Card({ image, con, tech, title, link }) {
   return (
-    <a href={link} target="_blank">
+    <a href={link} rel="noreferrer" target="_blank">
       <div className={classes.card}>
         <div className={classes.cardimgcon}>
           <img src={image.src} alt="card img" />

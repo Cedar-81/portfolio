@@ -12,12 +12,12 @@ function Homepage() {
       <div className={classes.ctaoutercon}>
         <div className={classes.ctacon}>
           <div className={classes.bannertxt}>
-            I'M A WEB <br />
+            I&apos;M A WEB <br />
             DEVELOPER
           </div>
           <div className={classes.bannerbtncon}>
             <Link href={"/contact"}>
-              <div className={classes.bannerbtn}>let's talk</div>
+              <div className={classes.bannerbtn}>let&apos;s talk</div>
             </Link>
           </div>
           <div className={classes.bannersocialscon}>
