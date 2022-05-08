@@ -1,0 +1,23 @@
+.blogspage {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogspage .cardcon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.blogspage  .innercon {
+    padding: 0 5%;
+    width: 100%;
+    
+}

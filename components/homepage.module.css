@@ -1,0 +1,169 @@
+.homepage {
+  color: white;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  position: relative;
+  display: flex;
+}
+
+.homepage .ctaoutercon {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.homepage .ctacon {
+  padding-left: 5%;
+  padding-top: 8em;
+}
+
+.homepage .bannerimg {
+  flex: 1;
+  position: relative;
+  right: 0;
+}
+
+.homepage .bannertxt {
+  font-size: 130px;
+  font-weight: 700;
+  top: 0.5em;
+}
+
+.homepage .bannerimg img {
+  height: 600px;
+  position: relative;
+  bottom: 0;
+}
+
+.homepage .bannerimg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.homepage .ctacon .bannerbtn {
+  height: 2em;
+  background-color: var(--main-color);
+  width: 13em;
+  font-size: 30px;
+  padding: 0;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.7em;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.homepage .ctacon .bannerbtn:hover {
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+}
+
+.homepage .ctacon .bannersocialscon {
+  width: 100%;
+}
+
+.homepage .ctacon .bannersocials {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 2em;
+  padding-left: 1em;
+}
+
+.ctacon .bannersocials img {
+  height: 35px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.ctacon .bannersocials img:hover {
+  transform: rotate(360deg);
+}
+
+/* media query */
+@media only screen and (max-width: 913px) {
+  .homepage {
+    flex-wrap: wrap !important;
+    max-height: max-content !important;
+    overflow-y: scroll;
+  }
+
+  .homepage .ctaoutercon {
+    height: max-content !important;
+  }
+
+  .homepage .ctacon .bannertxt {
+    font-size: 10vw !important;
+    text-align: center !important;
+  }
+
+  .homepage .ctacon {
+    padding-left: 0 !important;
+  }
+
+  .homepage .bannersocials {
+    min-width: 80% !important;
+    padding: 0 1em !important;
+  }
+
+  .homepage .bannerbtncon {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .homepage .bannerbtn {
+    width: 100% !important;
+    max-width: 100vw !important;
+    height: 8vh !important;
+  }
+
+  .homepage .ctacon .bannersocialscon {
+    min-width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  .homepage .bannerimg img {
+    width: 100vw !important;
+    height: auto !important;
+  }
+}
+
+/* potrait tabs  */
+@media only screen and (min-width: 540px) and (max-width: 912px) {
+  .homepage {
+    overflow-y: scroll !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1246px) {
+  .homepage .bannertxt {
+    font-size: 100px !important;
+  }
+}
+
+@media only screen and (min-width: 1426px) {
+  .homepage {
+    overflow-y: scroll !important;
+  }
+
+  .homepage .bannerimg img {
+    width: 800px !important;
+    height: auto !important;
+  }
+
+  .homepage .bannerbtn {
+    min-height: 3em !important;
+  }
+}

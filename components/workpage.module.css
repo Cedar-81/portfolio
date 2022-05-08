@@ -1,0 +1,66 @@
+.workpage {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.workpage .cardcon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-top: 10%;
+}
+
+.workpage .innercon {
+
+    padding: 0 5%;
+    width: 100%;
+}
+
+.workpage .skills {
+    width: 100%;
+    height: 6rem;
+    background-color: var(--main-color);
+}
+
+.workpage .skillscon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6rem;
+}
+
+
+.workpage .skillscon img {
+    height: 4rem;
+}
+
+
+@media only screen and (max-width: 912px) { 
+    .workpage {
+        overflow-y: scroll;
+    }
+
+    .workpage .skills, .workpage .skillscon {
+        height: max-content;
+    }
+
+
+    .workpage .skills {
+        margin-top: 3em;
+    }
+
+    .workpage .skillscon {
+        flex-wrap: wrap;
+    }
+
+    .workpage img {
+        margin: 1em 2em !important;
+    }
+}
