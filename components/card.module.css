@@ -8,6 +8,10 @@
   margin: 2em;
 }
 
+.tech {
+  color: var(--main-color)
+}
+
 .card .cardimgcon {
   width: 100%;
   height: 10em;

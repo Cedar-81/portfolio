@@ -94,7 +94,7 @@
   .homepage {
     flex-wrap: wrap !important;
     max-height: max-content !important;
-    overflow-y: scroll;
+    overflow-y: auto !important;
   }
 
   .homepage .ctaoutercon {
@@ -143,7 +143,7 @@
 /* potrait tabs  */
 @media only screen and (min-width: 540px) and (max-width: 912px) {
   .homepage {
-    overflow-y: scroll !important;
+    overflow-y: auto !important;
   }
 }
 
@@ -155,7 +155,7 @@
 
 @media only screen and (min-width: 1426px) {
   .homepage {
-    overflow-y: scroll !important;
+    overflow-y: auto !important;
   }
 
   .homepage .bannerimg img {

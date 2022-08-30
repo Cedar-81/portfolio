@@ -1,7 +1,7 @@
 .workpage {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,11 +10,11 @@
 
 .workpage .cardcon {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
-    overflow: hidden;
-    overflow-x: scroll;
     margin-top: 10%;
+    margin-bottom: 10em;
 }
 
 .workpage .innercon {
@@ -27,6 +27,8 @@
     width: 100%;
     height: 6rem;
     background-color: var(--main-color);
+    position: fixed;
+    bottom: 0;
 }
 
 .workpage .skillscon {
@@ -42,25 +44,33 @@
 }
 
 
-@media only screen and (max-width: 912px) { 
+@media only screen and (max-width: 912px) {
     .workpage {
         overflow-y: scroll;
     }
 
-    .workpage .skills, .workpage .skillscon {
+    .workpage .skills,
+    .workpage .skillscon {
         height: max-content;
     }
 
 
+    .workpage .cardcon {
+        margin-bottom: 10rem !important;
+    }
+
     .workpage .skills {
         margin-top: 3em;
+
     }
 
     .workpage .skillscon {
         flex-wrap: wrap;
+        max-height: 8rem;
     }
 
-    .workpage img {
+    .workpage .skillscon img {
         margin: 1em 2em !important;
+        height: 2em !important;
     }
 }

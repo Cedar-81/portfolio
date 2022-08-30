@@ -12,12 +12,30 @@ import reacticon from "../public/assets/reactjsicon.svg";
 import blockchainunnimg from "../public/assets/blockchainunnimg.png";
 import xplorelibzimg from "../public/assets/xplorelibzimg.png";
 import rpsimg from "../public/assets/rpsimg.png";
+import flipimg from "../public/assets/flipimg.png";
+import flipimgmain from "../public/assets/flipimgmain.png";
 
 function Workpage() {
   return (
     <div className={classes.workpage}>
       <div className={classes.innercon}>
         <div className={classes.cardcon}>
+          <Card
+            image={flipimgmain}
+            con={`Flip is a school management software developed to accomodate note
+            manangement and complex classcourse structures for teaches and students.`}
+            tech={`Nextjs, Reactjs, Prisma, Apollo Graphql, AWS, Vercel`}
+            title={"Flip Classroom Teachers View"}
+            link={"https://flip-classroom-teachers.readate.org"}
+          />
+          <Card
+            image={flipimg}
+            con={`Flip is a school management software developed to accomodate note
+            manangement and complex classcourse structures for teaches and students.`}
+            tech={`Nextjs, Reactjs, Prisma, Apollo Graphql, AWS, Vercel`}
+            title={"Flip Classroom Students View"}
+            link={"https://flip-classroom-students.readate.org"}
+          />
           <Card
             image={blockchainunnimg}
             con={`This website was give as a task in the blockchain community in

@@ -36,7 +36,7 @@ function Nav() {
   }
 
   return (
-    <>
+    <div className={classes.outernavcon}>
       <div className={classes.nav}>
         <Link href={"/"}>
           <div className={classes.logo}>{navVal}</div>
@@ -117,7 +117,7 @@ function Nav() {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

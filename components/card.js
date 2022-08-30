@@ -12,7 +12,7 @@ function Card({ image, con, tech, title, link }) {
           <p className={classes.cardbody}>
             {con}
             <br />
-            <b>Tech: </b>
+            <b className={classes.tech}>Tech: </b>
             {tech}
           </p>
         </div>

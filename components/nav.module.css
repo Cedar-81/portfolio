@@ -8,8 +8,14 @@
   color: var(--font-primary);
   padding: 0 5%;
   position: fixed;
+  background-color: black;
   top: 0;
   z-index: 2;
+}
+
+.outernavcon {
+  position: static;
+  top: 0;
 }
 
 .nav2 {
